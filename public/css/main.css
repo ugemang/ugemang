@@ -2,17 +2,29 @@ body{
 
 }
 
-.container { width:1100px; margin:0 auto; height:50px;}
+.container { width:1000px; margin:0 auto;}
 
-.content {
-  clear: both;
-height: 300px;
-position: relative;
-margin: 0 auto;
-background-color: #FFCC66;
-width: 70%;
-padding: 20px;
-}
-.content .header { }
-.content .body { }
-.content .comment { }
+.content { clear:both; }
+
+.content .board {}
+.content .board.title { padding-top:20px; padding-bottom:20px; }
+
+.content .post { border-top:1px solid #b5b5b5; }
+.content .post .title { padding:10px 0px 10px 10px; }
+.content .post .title .name {}
+.content .post .title .date { float:right }
+
+.content .post .subinfo { padding:5px 0px 5px 10px; font-size:11px; border-top:1px solid #b5b5b5; border-bottom:1px solid #b5b5b5;}
+.content .post .subinfo .info { margin-right: 20px;}
+
+.content .post .body { height : 400px;}
+
+.content .post .previousArticle { border-top:1px solid #b5b5b5; padding:10px 0px 10px 0px;}
+.content .post .nextArticle { border-top:1px solid #b5b5b5; border-bottom:1px solid #b5b5b5; padding:10px 0px 10px 0px;}
+
+.articleLink { font-size: 12px; color:#666666; margin-left:10px;}
+
+.content .post .body { padding:30px 0px 30px 10px;}
+.content .post .files {}
+
+.content .reply {}
