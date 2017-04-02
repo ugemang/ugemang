@@ -1,0 +1,18 @@
+body{
+
+}
+
+.container { width:1100px; margin:0 auto; height:50px;}
+
+.content {
+  clear: both;
+height: 300px;
+position: relative;
+margin: 0 auto;
+background-color: #FFCC66;
+width: 70%;
+padding: 20px;
+}
+.content .header { }
+.content .body { }
+.content .comment { }
