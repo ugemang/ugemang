@@ -40,8 +40,10 @@ body{
 .content .replyArea .reply .userInfo .modify { float :right;}
 .content .replyArea .reply .replyBody{ padding-top:5px; font-size:12px; }
 .content .replyArea .paging { list-style: none; text-align: center; padding-left:0px; }
-.content .replyArea .paging li { padding:10px 15px 10px 15px; border:solid 1px silver; display: inline;}
-.content .replyArea .paging li:hover { background-color:orange; text-decoration: underline; cursor: pointer;}
+.content .replyArea .paging li { padding:10px 15px 10px 15px; display: inline; cursor: pointer;}
+.content .replyArea .paging .sq{ border:solid 1px silver; }
+.content .replyArea .paging .sq:hover { background-color:orange; text-decoration: underline; }
+.content .replyArea .paging li:hover { background-color:orange; text-decoration: underline; }
 .content .reply {}
 
 .content .comment {
@@ -51,5 +53,5 @@ body{
 }
 
 .content .comment .writing { width:975px;height:150px; margin:10px;}
-.content .comment .save { float:right; margin-right:10px; width:100px; height:20px; display:table; font-size: 11px; background-color:#b5b5b5;}
+.content .comment .save { cursor:pointer; float:right; margin-right:10px; width:100px; height:20px; display:table; font-size: 11px; background-color:#b5b5b5;}
 .content .comment .save p{ display: table-cell; vertical-align: middle; text-align: center;}
