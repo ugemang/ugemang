@@ -27,4 +27,29 @@ body{
 .content .post .body { padding:30px 0px 30px 10px;}
 .content .post .files {}
 
+.content .board.title2 { padding:40px 0px 20px 0px; border-bottom:1px solid #b5b5b5; }
+.content .board.title2 .subject { font-size: 16px; }
+.content .board.title2 .total { font-size:11px; float:right}
+
+.content .replyArea { padding-top:10px;}
+.content .replyArea .reply {border-bottom:1px solid #b5b5b5; padding:10px 0px 10px 0px; }
+.content .replyArea .reply .userInfo { font-size:12px; }
+.content .replyArea .reply .userInfo .nick { margin-left:5px; }
+.content .replyArea .reply .userInfo .date { margin-left:10px;}
+.content .replyArea .reply .userInfo .userIcon { vertical-align: middle; }
+.content .replyArea .reply .userInfo .modify { float :right;}
+.content .replyArea .reply .replyBody{ padding-top:5px; font-size:12px; }
+.content .replyArea .paging { list-style: none; text-align: center; padding-left:0px; }
+.content .replyArea .paging li { padding:10px 15px 10px 15px; border:solid 1px silver; display: inline;}
+.content .replyArea .paging li:hover { background-color:orange; text-decoration: underline; cursor: pointer;}
 .content .reply {}
+
+.content .comment {
+  background-color:#f6f6f6;
+  width : auto;
+  height:210px;
+}
+
+.content .comment .writing { width:975px;height:150px; margin:10px;}
+.content .comment .save { float:right; margin-right:10px; width:100px; height:20px; display:table; font-size: 11px; background-color:#b5b5b5;}
+.content .comment .save p{ display: table-cell; vertical-align: middle; text-align: center;}
