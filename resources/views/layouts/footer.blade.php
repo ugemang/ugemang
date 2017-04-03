@@ -1,3 +1,5 @@
 <div class="footer">
-  this is footer
+  <div class="footer-area">
+    <div class="title">UGEMANG</div>
+  </div>
 </div>
