@@ -5,7 +5,7 @@
 
 <div class="content">
 
-  <div class="board title">게시판</div>
+  <div class="board title"><span class="subject">게시판</span></div>
 
   <div class="post">
     <div class="title"><span class="name">타이탄폴2</span><span class="date">2017.01.01</span></div>
@@ -46,22 +46,7 @@
       </div>
     </div>
 
-    <ul class="paging">
-      <li class="sq"><<</li>
-      <li class="sq"><</li>
-      <li>1</li>
-      <li>2</li>
-      <li class="sq">3</li>
-      <li>4</li>
-      <li>5</li>
-      <li>6</li>
-      <li>7</li>
-      <li>8</li>
-      <li>9</li>
-      <li>10</li>
-      <li class="sq">></li>
-      <li class="sq">>></li>
-    </ul>
+    @include('layouts.paging')
   </div>
 
   <div class="comment">

@@ -19,6 +19,10 @@ Route::get('/post', function(){
     return view('post');
 });
 
+Route::get('/news', function(){
+  return view('news');
+});
+
 Route::get('/main', function()
 {
   return view('main');
