@@ -71,3 +71,27 @@ body{
 .content .newsArea .news .article .info { border-top:1px solid #cccccc; padding:15px 0px 15px 0px; font-size: 11pt;}
 .content .newsArea .news .article .info span{ margin-right: 20px;}
 .content .newsArea .news .article .summary { border-top:1px solid #cccccc; padding:15px 0px 15px 0px; font-size:10pt;}
+
+.content .profile { }
+.content .profile .userIcon { border-top:1px solid #cccccc; display: table; width:100%; padding: 15px 0px 15px 0px;}
+.content .profile .userIcon .name { display: table-cell; width:20%; padding-left:30px;}
+.content .profile .userIcon .iconImg { display: table-cell; margin-left:10px;}
+
+.content .profile .nick { border-top:1px solid #cccccc; display: table; width:100%; padding: 15px 0px 15px 0px;}
+.content .profile .nick .name { display: table-cell; width:20%; padding-left:30px;}
+.content .profile .nick .nick2 { display: table-cell; margin-left:10px;}
+
+.content .profile .password { border-top:1px solid #cccccc; display: table; width:100%; padding: 15px 0px 5px 0px;}
+.content .profile .password .name { display: table-cell; width:20%; padding-left:30px;}
+.content .profile .password .pwd { display: table-cell; margin-left:10px;}
+.content .profile .password .pwd input{ width:200px; height:30px; font-size: 13pt;}
+
+.content .profile .password2 { display: table; width:100%; padding: 5px 0px 5px 0px;}
+.content .profile .password2 .name { display: table-cell; width:20%; padding-left:30px;}
+.content .profile .password2 .pwd { display: table-cell; margin-left:10px;}
+.content .profile .password2 .pwd input{ width:200px; height:30px; font-size: 13pt;}
+
+.content .profile .password3 { border-bottom:1px solid #cccccc; display: table; width:100%; padding: 5px 0px 15px 0px;}
+.content .profile .password3 .name { display: table-cell; width:20%; padding-left:30px;}
+.content .profile .password3 .pwd { display: table-cell; margin-left:10px;}
+.content .profile .password3 .pwd input{ width:200px; height:30px; font-size: 13pt;}
