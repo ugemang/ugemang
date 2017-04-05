@@ -109,6 +109,64 @@
                 <button class="view-more">
                 </button>
             </div>
+            <div class="new-post-wrap">
+                <div class="new-post-top">
+                    <div class="sb01">NO</div>
+                    <div class="sb02">제목</div>
+                    <div class="sb03">등록일</div>
+                    <div class="sb04">조회수</div>
+                </div>
+                <ul class="new-post-list">
+                    <li>
+                        <div class="cont-info">
+                            <div class="no">5</div>
+                            <div class="tit">용감하고 굳세게</div>
+                            <div class="regdate">2017-01-01</div>
+                            <div class="clicknum">119</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="new-post-list">
+                    <li>
+                        <div class="cont-info">
+                            <div class="no">5</div>
+                            <div class="tit">용감하고 굳세게</div>
+                            <div class="regdate">2017-01-01</div>
+                            <div class="clicknum">119</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="new-post-list">
+                    <li>
+                        <div class="cont-info">
+                            <div class="no">5</div>
+                            <div class="tit">용감하고 굳세게</div>
+                            <div class="regdate">2017-01-01</div>
+                            <div class="clicknum">119</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="new-post-list">
+                    <li>
+                        <div class="cont-info">
+                            <div class="no">5</div>
+                            <div class="tit">용감하고 굳세게</div>
+                            <div class="regdate">2017-01-01</div>
+                            <div class="clicknum">119</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="new-post-list">
+                    <li>
+                        <div class="cont-info">
+                            <div class="no">5</div>
+                            <div class="tit">용감하고 굳세게</div>
+                            <div class="regdate">2017-01-01</div>
+                            <div class="clicknum">119</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="hot-post">
             <div class="title-wrap">
