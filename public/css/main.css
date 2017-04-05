@@ -3,7 +3,7 @@ body{
 }
 
 
-.container { width:940px; margin:0 auto;}
+.container { width:940px; margin:0 auto; min-height:70%;}
 
 .content { clear:both; }
 
