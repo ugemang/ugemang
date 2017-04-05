@@ -11,6 +11,7 @@
       <div class="name">
         프로필 아이콘
       </div>
+        
       <div class="iconImg">
         <input type="radio" name="ruriweb" value="ruriweb"/> ruriweb
         <input type="radio" name="kakao" value="kakao"/> kakao
