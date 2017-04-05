@@ -20,3 +20,6 @@ Route::get('/news', function(){ return view('news'); });
 Route::get('/mypage', function() { return view('mypage'); });
 
 Route::get('/main', function(){ return view('main'); });
+
+Route::get('/register', 'RegistrationController@create');
+Route::get('/login', 'SessionController@create');
