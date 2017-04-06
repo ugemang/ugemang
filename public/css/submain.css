@@ -36,7 +36,6 @@ time, mark, audio, video, button {
   .header-top .header-title{
     display: inline-block;
     margin-top: 24px;
-    font-family: Arial;
     font-weight: bold;
     font-size: 30px;}
 
@@ -91,12 +90,12 @@ time, mark, audio, video, button {
           margin: 0 12px;
           padding-top: 2px;}
         .header-util ul li:nth-child(2n+1){
-          font-family: Arial;
           font-weight: bold;
           float:left;
           font-size: 13px;}
 
 .header .header-menu{
+  min-width: 940px;
   height: 54px;
   background-color: black;}
   .header-menu .header-menu-tabs{
@@ -115,7 +114,6 @@ time, mark, audio, video, button {
       color:#464646;}
     .header-menu .header-menu-tabs li:nth-child(2n+1){
       text-align: center;
-      font-family: Arial;
       font-weight: bold;
       width:121px;
       float:left;
@@ -124,7 +122,6 @@ time, mark, audio, video, button {
 
   .header-menu .header-menu-tabs .facebook-btn{
     font-size: 18px;
-    font-family: Arial;
     font-weight: bold;
     line-height: 10px;
     float: right;
@@ -142,17 +139,18 @@ time, mark, audio, video, button {
 .footer-area{
   background-color: #f2f2f2;
   width: 100%;
+  min-width: 940px;
   height: 104px;
   margin-top: 43px;
 }
 .footer-area .title{
   text-align: center;
-  font-family: Arial;
   font-weight: bold;
   font-size: 30px;
   padding-top: 30px;
 }
 /*////////////*/
+
 /*main-page*/
 .main-content{
   width:940px;
@@ -180,7 +178,6 @@ time, mark, audio, video, button {
         .login-input-area .login-title{
           display: block;
           font-size: 24px;
-          font-family: Arial;
           font-weight: bold;
           margin: 25px 0 25px 0;}
         .login-input-area input{
@@ -188,7 +185,6 @@ time, mark, audio, video, button {
           height:50px;
           display: block;
           font-size: 15px;
-          font-family: Arial;
           padding:0;
           padding-left: 15px;
           padding-right: 15px;
@@ -207,7 +203,6 @@ time, mark, audio, video, button {
           height:50px;
           display: block;
           font-size: 15px;
-          font-family: Arial;
           color: white;}
         .login-input-area .login-btn{
           background-color: #2c2c2c;
@@ -252,14 +247,15 @@ time, mark, audio, video, button {
         border: 1px solid #e1e1e1;}
         .main-second-row .content-wrap .tab .tab-text .title{
           font-size: 16px;
-          font-family: Arial;
           font-weight: bold;
           margin-bottom: 10px;
           width:162px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
         .main-second-row .content-wrap .tab .tab-text .summary{
           font-size: 14px;
-          font-family: Arial;
           width:162px;
           height:40px;
           /*display: inline-block; width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;*/
@@ -280,7 +276,7 @@ time, mark, audio, video, button {
     margin-top: 24px;
     width:inherit;
     height:40px;}
-    .title-wrap .news-title{
+    .title-wrap .curation-title{
       display: inline-block;
       margin: 5px 0 0 41px;
       font-size: 24px;}
@@ -315,7 +311,6 @@ time, mark, audio, video, button {
         .main-third-row .content-wrap .tab .tab-text .title{
           padding: 12px 12px 12px 12px;
           font-size: 16px;
-          font-family: Arial;
           font-weight: bold;
           margin-bottom: 10px;
           width:162px;
@@ -336,7 +331,7 @@ time, mark, audio, video, button {
       margin-top: 24px;
       width:inherit;
       height:40px;}
-      .title-wrap .news-title{
+      .title-wrap .new-title{
         display: inline-block;
         margin: 5px 0 0 41px;
         font-size: 24px;}
@@ -348,53 +343,45 @@ time, mark, audio, video, button {
         width:40px;
         height:40px;
         border:1px solid black;}
-      .main-fourth-row .new-post .new-post-wrap{
-        border-top: 2px solid black;
-        margin: 24px 41px 0 41px;
+    .main-fourth-row .new-post .new-post-wrap{
+      border-top: 2px solid black;
+      border-bottom: 1px solid #cccccc;
+      margin: 24px 41px 0 41px;
+      width:366px;}
+      .main-fourth-row .new-post .new-post-wrap .new-post-top{
+        height:45px;
         width:366px;}
-        .main-fourth-row .new-post .new-post-wrap .new-post-top{
-          width:366px;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-top div{
-            float: left;
-            line-height: 45px;
-            text-align: center;
-            font-size: 14px;
-            font-family: Arial;
-            font-weight: bold;
-            display: block;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-top .sb01{
-            width:14%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-top .sb02{
-            width:46%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-top .sb03{
-            width:20%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-top .sb04{
-            width:20%;}
-        .main-fourth-row .new-post .new-post-wrap .new-post-list{
-          width:366px;
-
-          list-style: none;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info div{
-            border-top: 1px solid #cccccc;
-            float: left;
-            line-height: 50px;
-            text-align: center;
-            font-size: 14px;
-            font-family: Arial;
-            display: block;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info div:last-child{
-          }
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .no{
-            width:14%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .tit{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width:46%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .regdate{
-            width:20%;}
-          .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .clicknum{
-            width:20%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-top div{
+          float: left;
+          line-height: 45px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          display: block;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-top .sb01{width:14%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-top .sb02{width:46%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-top .sb03{width:20%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-top .sb04{width:20%;}
+      .main-fourth-row .new-post .new-post-wrap .new-post-list{
+        width:366px;
+        list-style: none;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li{
+          height:51px;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info div{
+          border-top: 1px solid #cccccc;
+          float: left;
+          line-height: 50px;
+          text-align: center;
+          font-size: 14px;
+          display: block;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .no{width:14%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .tit{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width:46%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .regdate{width:20%;}
+        .main-fourth-row .new-post .new-post-wrap .new-post-list li .cont-info .clicknum{width:20%;}
   .main-fourth-row .hot-post{
     float: right;
     width: 448px;
@@ -404,7 +391,7 @@ time, mark, audio, video, button {
       margin-top: 24px;
       width:inherit;
       height:40px;}
-      .title-wrap .news-title{
+      .title-wrap .hot-title{
         display: inline-block;
         margin: 5px 0 0 41px;
         font-size: 24px;}
@@ -416,7 +403,45 @@ time, mark, audio, video, button {
         width:40px;
         height:40px;
         border:1px solid black;}
-
+    .main-fourth-row .hot-post .hot-post-wrap{
+      border-top: 2px solid black;
+      border-bottom: 1px solid #cccccc;
+      margin: 24px 41px 0 41px;
+      width:366px;}
+      .main-fourth-row .hot-post .hot-post-wrap .hot-post-top{
+        height:45px;
+        width:366px;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-top div{
+          float: left;
+          line-height: 45px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          display: block;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-top .sb01{width:14%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-top .sb02{width:46%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-top .sb03{width:20%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-top .sb04{width:20%;}
+      .main-fourth-row .hot-post .hot-post-wrap .hot-post-list{
+        width:366px;
+        list-style: none;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li{
+          height:51px;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li .cont-info div{
+          border-top: 1px solid #cccccc;
+          float: left;
+          line-height: 50px;
+          text-align: center;
+          font-size: 14px;
+          display: block;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li .cont-info .no{width:14%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li .cont-info .tit{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width:46%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li .cont-info .regdate{width:20%;}
+        .main-fourth-row .hot-post .hot-post-wrap .hot-post-list li .cont-info .clicknum{width:20%;}
 .main-content .main-fifth-row{
   width: 938px;
   height:698px;
@@ -426,7 +451,7 @@ time, mark, audio, video, button {
     margin-top: 24px;
     width:inherit;
     height:40px;}
-    .title-wrap .news-title{
+    .title-wrap .sns-title{
       display: inline-block;
       margin: 5px 0 0 41px;
       font-size: 24px;}
@@ -438,3 +463,149 @@ time, mark, audio, video, button {
       width:40px;
       height:40px;
       border:1px solid black;}
+  .main-fifth-row .sns-content-wrap{
+    width:856px;
+    border-top: 1px solid #e1e1e1;
+    margin: 31px 0 0 41px;}
+    .sns-content-wrap .sns-content {
+      float:left;
+      border-left: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+      border-right: none;}
+    .sns-content-wrap .sns-content:nth-child(3n){
+      border-right: 1px solid #e1e1e1;
+
+    }
+      .sns-content-wrap .sns-content .sns-image{
+        width:284px;
+        height:144px;}
+        .sns-content-wrap .sns-content .sns-image img{
+          float: left;
+          width:100%;
+          height:100%;}
+        .sns-content-wrap .sns-content .sns-image div{
+          background: url("/images/facebook_btn.png");
+          position:relative;
+          float: right;
+          top:-144px;
+          width:40px;
+          height:40px;}
+      .sns-content-wrap .sns-content .sns-info{
+        padding: 15px;
+        width:254px;
+        height:114px;}
+        .sns-content-wrap .sns-content .sns-info .info-title{
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 15px;}
+        .sns-content-wrap .sns-content .sns-info .info-summary{
+          font-size: 14px;
+          height:51px;
+          margin-bottom: 15px;
+          text-align: left;
+          word-wrap: break-word;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;}
+          .sns-content-wrap .sns-content .sns-info .info-summary span{
+            color: #3b589c;}
+        .sns-content-wrap .sns-content .sns-info .info-like{
+          font-size: 12px;
+          color: #999999;}
+          .sns-content-wrap .sns-content .sns-info .info-like .like-btn{
+            background: url("/images/like_btn.png");
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            margin-left: 10px;
+            vertical-align: bottom;}
+/*////////////////////main_over////////////////////////*/
+
+/*signup page*/
+.join-content{
+  width:940px;
+  height: 100%;
+  margin:0 auto;}
+  .join-content .join-txt{
+    margin-top: 38px;
+    font-weight: bold;
+    font-size: 24px;}
+  .join-content .join-input{
+    border-top: 2px solid #e1e1e1;
+    margin-top:38px;}
+    .join-content .join-input .br-bt{
+      border-bottom: 1px solid #e1e1e1;}
+      .join-content .join-input div .txt{
+        width:120px;
+        display :inline-block;
+        margin : 21px 0 21px 30px;
+        font-size: 14px;}
+      .join-content .join-input div input{height:34px;}
+      .join-content .join-input div .email-id{width:134px;}
+      .join-content .join-input div .email-domain{width:134px;}
+      .join-content .join-input div .name{width:194px;}
+      .join-content .join-input div .pwd{width:244px;}
+      .join-content .join-input div .pwd-chk{width:244px;}
+      .join-content .join-input div .duple{
+        font-size : 15px;
+        color:red;}
+      .join-content .join-input div .chk-btn{
+        width: 90px;
+        height: 40px;
+        font-size: 13px;
+        color: white;}
+      .join-content .join-input select{
+        width:120px;
+        height:40px;
+        background-color: white;
+        border: 1px solid #e1e1e1;
+        border-radius: 0px;
+        display: inline-block;
+        font: inherit;
+        padding : 0 10px 0 10px;
+
+        /* reset */
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;}
+      .join-content .join-input .arrow{
+        display :inline-block;
+        width:9px;
+        height: 5px;
+        background: url("/images/arrow_down.png") no-repeat;
+        position: relative;
+        left: -25px;}
+    .join-content .join-input .confirm-btn{
+      display: block;
+      width: 170px;
+      height: 60px;
+      font-size: 20px;
+      color : white;
+      margin : 0 auto;
+      margin-top:45px;
+    }
+  .join-content .link-btn-wrap{
+    text-align: center;
+    margin-top: 83px;}
+    .join-content .link-btn-wrap .btn-group{
+      margin-top: 30px;
+      text-align: left;}
+      .join-content .link-btn-wrap .btn-group .facebook-btn{
+        width: 290px;
+        height: 70px;
+        margin-right: 30px;
+        background: url("/images/facebook_lg_btn.png");}
+      .join-content .link-btn-wrap .btn-group .twitter-btn{
+        width: 290px;
+        height: 70px;
+        margin-right: 31px;
+        background: url("/images/twitter_lg_btn.png");}
+      .join-content .link-btn-wrap .btn-group .naver-btn{
+        width: 290px;
+        height: 70px;
+        background: url("/images/naver_lg_btn.png");}
+/*////////////////////signup_over////////////////////////*/
