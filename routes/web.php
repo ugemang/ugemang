@@ -21,7 +21,7 @@ Route::get('/mypage', function() { return view('mypage'); });
 
 Route::get('/main', function(){ return view('main'); });
 
-Route::get('/signup', function(){ return view('signup'); });
-
-Route::get('/register', 'RegistrationController@create');
+Route::get('/signup', 'RegistrationController@create');
 Route::get('/login', 'SessionController@create');
+
+Route::post('/signup', 'RegistrationController@store');
