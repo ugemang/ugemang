@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () { return view('welcome'); });
+
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/post', function(){ return view('post'); });
 
@@ -27,5 +28,3 @@ Route::get('/login', 'SessionController@create');
 Route::get('/logout', 'SessionController@destroy');
 
 Route::post('/signup', 'RegistrationController@store');
-
-Route::get('/home', 'HomeController@index');
