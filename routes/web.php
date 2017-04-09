@@ -29,5 +29,3 @@ Route::get('/logout', 'SessionController@destroy');
 Route::post('/signup', 'RegistrationController@store');
 
 Route::get('/home', 'HomeController@index');
-
-Route::get('/home', 'HomeController@index');

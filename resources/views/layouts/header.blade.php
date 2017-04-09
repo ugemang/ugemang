@@ -17,6 +17,9 @@
           <li>회원가입</li>
           <li>|</li>
           <li>마이페이지</li>
+          @if (Auth::check())
+            <li>{{Auth::user()->user_nickname}}</li>
+          @endif
         </ul>
       </div>
     </div>
