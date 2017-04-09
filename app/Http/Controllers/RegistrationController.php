@@ -15,6 +15,7 @@ class RegistrationController extends Controller
 
     public function store(){
 
+
       // hash check 는 기등록후 비밀번호 체크시 사용
       // password check
 
@@ -37,23 +38,28 @@ class RegistrationController extends Controller
       }
       */
 
-      if(request('pwd1') != request('pwd2')){
-        dd('password incorrect');
+      if(request('user_pass') != request('user_pass_confirmation')){
+
       }
 
       $this -> validate(request(),
         [
-          'name' => 'required',
-          'email' => 'required|email',
-          'pwd1' => 'required|min:8|regex:/^.*(?=.{3,})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\d\X])(?=.*[!$#%@]).*$/|confirmed',
-          'pwd2' => 'required|min:8|confirmed'
+          'user_login' => 'required',
+          'user_email' => 'required|email',
+          'user_pass' => 'required|min:8|confirmed'
         ]
       );
+      
+      $user = User::create([
+        'user_login' => request('user_login'),
+        'user_pass' => bcrypt(request('user_pass')),
+        'user_nickname' => request('user_nickname'),
+        'user_email' => request('user_email')
+      ]);
 
-      $user = User::create(request(['name', 'email', 'password']));
 
       auth()->login($user);
 
-      return redirect()->home();
+      return redirect('/');
     }
 }

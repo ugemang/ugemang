@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->string('user_email');
             $table->string('user_type');
             $table->string('user_icon');
-            $table->string('email');
             $table->rememberToken();
             $table->timestamps();
         });
