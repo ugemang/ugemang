@@ -11,8 +11,9 @@
 |
 */
 
+Route::get('/', function(){ return view('main'); });
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('main');
 
 Route::get('/post', function(){ return view('post'); });
 
@@ -20,11 +21,14 @@ Route::get('/news', function(){ return view('news'); });
 
 Route::get('/mypage', function() { return view('mypage'); });
 
-Route::get('/main', function(){ return view('main'); });
-
 Route::get('/signup', 'RegistrationController@create');
-Route::get('/login', 'SessionController@create');
+Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionController@create']);
+Route::post('/login', [ 'as' => 'login', 'uses' => 'SessionController@store']);
 
-Route::get('/logout', 'SessionController@destroy');
+Route::get('/logout', function(){
+  auth()->logout();
+  return redirect('/');
+});
+//Route::get('/logout', [ 'as' => 'destroySession', 'uses' => 'SessionController@destroy']);
 
 Route::post('/signup', 'RegistrationController@store');

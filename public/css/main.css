@@ -95,3 +95,16 @@ body{
 .content .profile .password3 .name { display: table-cell; width:20%; padding-left:30px;}
 .content .profile .password3 .pwd { display: table-cell; margin-left:10px;}
 .content .profile .password3 .pwd input{ width:200px; height:30px; font-size: 13pt;}
+
+.content .login_info { margin:0px auto; border-top:1px solid #cccccc; font-size:13pt;}
+.content .login_info .login_id { padding:30px 0px 20px 0px; width:100%; display: table; }
+.content .login_info .login_id .id_lavel { display:table-cell; width:20%;}
+.content .login_info .login_id .id_input { display:table-cell; }
+.content .login_info .login_id .id_input input { width:200px;height: 25px;font-size:12pt;}
+.content .login_info .login_pass { width:100%; display: table;}
+.content .login_info .login_pass .pass_lavel { display:table-cell; width:20%;}
+.content .login_info .login_pass .pass_input { display: table-cell; width:200px;}
+.content .login_info .login_pass .pass_input input { width:200px; height: 25px;font-size:12pt;}
+
+.content .login_info .login_button { text-align: center; padding-top:30px; }
+.content .login_info .login_button .button_input input{ width:200px; height:40px; font-size:20pt;}

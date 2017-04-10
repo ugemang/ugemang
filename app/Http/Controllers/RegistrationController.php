@@ -10,7 +10,7 @@ class RegistrationController extends Controller
 {
     //
     public function create(){
-      return view('sessions.create');
+      return view('registration.create');
     }
 
     public function store(){
@@ -49,10 +49,10 @@ class RegistrationController extends Controller
           'user_pass' => 'required|min:8|confirmed'
         ]
       );
-      
+
       $user = User::create([
         'user_login' => request('user_login'),
-        'user_pass' => bcrypt(request('user_pass')),
+        'user_pass' => Hash::make(request('user_pass')),
         'user_nickname' => request('user_nickname'),
         'user_email' => request('user_email')
       ]);
