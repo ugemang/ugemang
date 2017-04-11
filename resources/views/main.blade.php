@@ -14,13 +14,16 @@
             </div>
           @endif
           @if (!Auth::check())
+          <form class="" action="/login" method="post">
+            {{ csrf_field() }}
             <div class="login-input-area">
                 <span class="login-title">LOGIN</span>
-                <input type="text" class="login-id" name="" value="" placeholder="아이디">
-                <input type="password" class="login-pwd" name="" value="" placeholder="비밀번호">
-                <button type="button" class="login-btn" name="button">로그인</button>
-                <button type="button" class="signup-btn" name="button">회원가입</button>
+                <input type="text" class="login-id" name="user_login" value="" placeholder="아이디">
+                <input type="password" class="login-pwd" name="user_pass" value="" placeholder="비밀번호">
+                <button type="submit" class="login-btn" name="button">로그인</button>
+                <a href="/signup"><button type="button" class="signup-btn" name="button">회원가입</button></a>  
             </div>
+          </form>
           @endif
         </div>
     </div>
