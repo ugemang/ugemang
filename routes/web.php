@@ -30,3 +30,7 @@ Route::get('/logout', function(){
 //Route::get('/logout', [ 'as' => 'destroySession', 'uses' => 'SessionController@destroy']);
 
 Route::post('/signup', 'RegistrationController@store');
+
+Route::get('/{any}', function($any){
+    return redirect('/');
+})->where('any', '.*');

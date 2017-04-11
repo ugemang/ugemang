@@ -172,7 +172,7 @@ button:focus {outline:0;}
     .main-first-row .image-area{
       float: left;
       height:inherit;
-      width:534px;
+      width:100%;
       border: 1px solid #e1e1e1;
       margin-right: 41px;}
     .main-first-row .login-area{

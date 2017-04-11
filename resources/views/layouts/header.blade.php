@@ -20,9 +20,10 @@
           @if (Auth::check())
             <li>마이페이지</li>
             @if($icon != null)
-            <li><img src="/images/ico/{{$icon[0]->icon_src}}"/></li>
+            <li><img src="/images/ico/{{Auth::user()->level}}.gif"/>
+              <a href="/logout">{{Auth::user()->user_nickname}}</a>
+            </li>
             @endif
-            <li><a href="/logout">{{Auth::user()->user_nickname}}</a></li>
           @endif
         </ul>
       </div>

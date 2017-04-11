@@ -4,34 +4,7 @@
   <div class="main-content">
     <div class="main-first-row">
         <div class="image-area">
-
-        </div>
-        <div class="login-area">
-
-          @if (Auth::check())
-            <div class="login-user-area">
-              <div class="user-profile">
-                <div class="user-icon">
-                  @if($icon != null)
-                    <img src="/images/ico/{{$icon[0]->icon_src}}"/>
-                  @endif
-                </div>
-              </div>
-              <span class="user-name">{{Auth::user()->user_nickname}}</span>
-              <span class="user-name"><img src="/images/ico/{{Auth::user()->level}}.gif" alt=""></span>
-          @endif
-          @if (!Auth::check())
-          <form class="" action="/login" method="post">
-            {{ csrf_field() }}
-            <div class="login-input-area">
-                <span class="login-title">LOGIN</span>
-                <input type="text" class="login-id" name="user_login" value="" placeholder="아이디">
-                <input type="password" class="login-pwd" name="user_pass" value="" placeholder="비밀번호">
-                <button type="submit" class="login-btn" name="button">로그인</button>
-                <a href="/signup"><button type="button" class="signup-btn" name="button">회원가입</button></a>
-            </div>
-          </form>
-          @endif
+          main banner area
         </div>
     </div>
     <div class="main-second-row">
