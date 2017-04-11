@@ -14,6 +14,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+
+        view()->composer(['layouts.header','main'], function($view){
+          $view->with('icon', \App\Icon::geticon());
+        });
     }
 
     /**

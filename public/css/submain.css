@@ -218,6 +218,12 @@ button:focus {outline:0;}
           margin-bottom: 20px;}
         .login-input-area .signup-btn{
           background-size: #666666; width:100%;}
+
+.main-first-row .login-area .login-user-area{}
+.main-first-row .login-area .login-user-area .user-profile{}
+.main-first-row .login-area .login-user-area .user-profile .user-icon{ width:36px;height:36px; padding:5px; border:1px solid #cccccc;}
+
+
 .main-content .main-second-row{
   width: 938px;
   height: 356px;

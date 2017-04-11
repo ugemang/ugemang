@@ -11,7 +11,7 @@
     <title>Ugemang Community</title>
 
     <!-- Custom styles for this template -->
-    <link href="/css/submain.css?ver=1.5" rel="stylesheet">
+    <link href="/css/submain.css?ver=1.6" rel="stylesheet">
     <link href="/css/main.css?ver=1.1" rel="stylesheet">
   </head>
 
