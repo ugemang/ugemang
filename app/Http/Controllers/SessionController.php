@@ -22,13 +22,6 @@ class SessionController extends Controller
       return redirect('/main');
     }
 
-    public function destroy(){
-dd("logout");
-
-      auth()->logout();
-      return redirect('/');
-    }
-
     public function store(){
 
       $u = User::where('user_login', request('user_login'))->first();
@@ -46,7 +39,7 @@ dd("logout");
           ]);
         }
       }
-      
+
       return redirect('/');
     }
 }

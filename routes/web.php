@@ -13,8 +13,6 @@
 
 Route::get('/', function(){ return view('main'); });
 
-Route::get('/home', 'HomeController@index')->name('main');
-
 Route::get('/post', function(){ return view('post'); });
 
 Route::get('/news', function(){ return view('news'); });
