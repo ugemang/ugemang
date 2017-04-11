@@ -81,19 +81,10 @@
             </div>
           </div>
           <button type="submit" class="confirm-btn" name="button">가입완료</button>
+          <a href="/"><button type="button" class="confirm-btn" name="button">취소</button></a>
         </div>
       </fieldset>
 
     </form>
-    <div class="link-btn-wrap">
-      <span>
-        소셜 계정으로 지금 바로 로그인 하실 수 있습니다.
-      </span>
-      <div class="btn-group">
-      <button type="button" class="facebook-btn" name="button"></button>
-      <button type="button" class="twitter-btn" name="button"></button>
-      <button type="button" class="naver-btn" name="button"></button>
-      </div>
-    </div>
   </div>
 @endsection

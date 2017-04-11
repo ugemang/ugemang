@@ -7,6 +7,13 @@
 
         </div>
         <div class="login-area">
+
+          @if (Auth::check())
+            <div class="login-user-area">
+              <span class="user-name">{{Auth::user()->user_nickname}}</span>
+            </div>
+          @endif
+          @if (!Auth::check())
             <div class="login-input-area">
                 <span class="login-title">LOGIN</span>
                 <input type="text" class="login-id" name="" value="" placeholder="아이디">
@@ -14,6 +21,7 @@
                 <button type="button" class="login-btn" name="button">로그인</button>
                 <button type="button" class="signup-btn" name="button">회원가입</button>
             </div>
+          @endif
         </div>
     </div>
     <div class="main-second-row">

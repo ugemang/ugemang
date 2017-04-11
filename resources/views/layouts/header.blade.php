@@ -1,7 +1,7 @@
 <div class="header">
   <div class="header-top">
     <span class="header-title">
-      UGEMANG
+     <a href="/">UGEMANG</a>
     </span>
     <div class="header-util">
       <div class="header-search">
@@ -12,13 +12,14 @@
       </div>
       <div class="header-tabs">
         <ul>
-          <li>로그인</li>
-          <li>|</li>
-          <li>회원가입</li>
-          <li>|</li>
-          <li>마이페이지</li>
+          @if (!Auth::check())
+            <li><a href="/login">로그인</a></li>
+            <li>|</li>
+            <li><a href="/signup">회원가입</a></li>
+          @endif
           @if (Auth::check())
-            <li>{{Auth::user()->user_nickname}}</li>
+            <li>마이페이지</li>
+            <li><a href="/logout">{{Auth::user()->user_nickname}}</a></li>
           @endif
         </ul>
       </div>

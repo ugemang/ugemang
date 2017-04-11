@@ -27,6 +27,9 @@ time, mark, audio, video, button {
 	border: 0;
 }
 
+a{ text-decoration: none; }
+button:focus {outline:0;}
+
 /*header-area*/
 .header .header-top{
   width:940px;
@@ -92,7 +95,10 @@ time, mark, audio, video, button {
         .header-util ul li:nth-child(2n+1){
           font-weight: bold;
           float:left;
-          font-size: 13px;}
+          font-size: 13px;
+        cursor: pointer;}
+
+          .header-util ul li a{text-decoration: none;}
 
 .header .header-menu{
   min-width: 940px;
@@ -107,7 +113,8 @@ time, mark, audio, video, button {
     padding: 0;
     color:white;}
     .header-menu .header-menu-tabs li{
-      margin-top: 21px;}
+      margin-top: 21px;
+    }
     .header-menu .header-menu-tabs li:nth-child(2n){
       float:left;
       font-size: 16px;
@@ -118,7 +125,9 @@ time, mark, audio, video, button {
       width:121px;
       float:left;
       font-size: 16px;
-      letter-spacing: 4px;}
+      letter-spacing: 4px;
+      cursor: pointer;
+    }
 
   .header-menu .header-menu-tabs .facebook-btn{
     font-size: 18px;
@@ -555,6 +564,10 @@ time, mark, audio, video, button {
         height: 40px;
         font-size: 13px;
         color: white;}
+
+      .join-content .join-input div .chk-btn:hover{
+        background-color: orange;
+      }
       .join-content .join-input select{
         width:120px;
         height:40px;
@@ -587,6 +600,11 @@ time, mark, audio, video, button {
       color : white;
       margin : 0 auto;
       margin-top:45px;
+
+    }
+
+    .join-content .join-input .confirm-btn:hover{
+      background-color:orange;
     }
   .join-content .link-btn-wrap{
     text-align: center;
