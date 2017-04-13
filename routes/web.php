@@ -31,6 +31,9 @@ Route::get('/logout', function(){
 
 Route::post('/signup', 'RegistrationController@store');
 
+Route::get('/verifyemail/{token}', 'RegistrationController@verify');
+
+
 Route::get('/{any}', function($any){
     return redirect('/');
 })->where('any', '.*');

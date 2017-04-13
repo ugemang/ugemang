@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
+use App\Jobs\SendVerificationEmail;
 use App\User;
+
 use Hash;
 use Auth;
 
@@ -58,12 +61,23 @@ class RegistrationController extends Controller
         'user_login' => request('user_login'),
         'user_pass' => Hash::make(request('user_pass')),
         'user_nickname' => request('user_nickname'),
-        'user_email' => request('user_email')
+        'user_email' => request('user_email'),
+        'email_token' => base64_encode(request('user_email'))
       ]);
 
+      dispatch(new SendVerificationEmail($user));
 
-      auth()->login($user);
+      //auth()->login($user);
 
-      return redirect('/');
+      return view('email.verification');
+    }
+
+    public function verify($token)
+    {
+      $user = User::where('email_token',$token)->first();
+      $user->verified = 1;
+      if($user->save()){
+        return view('email.emailconfirm',['user'=>$user]);
+      }
     }
 }

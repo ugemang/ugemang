@@ -17,6 +17,10 @@
 
   <body>
 
+    @if(Session::has('flash_message'))
+      <script>alert("로그인 실패")</script>
+    @endif
+
     @include('layouts.header')
 
     <div class="container">

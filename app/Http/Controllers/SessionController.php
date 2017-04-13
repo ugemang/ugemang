@@ -26,6 +26,11 @@ class SessionController extends Controller
 
       $u = User::where('user_login', request('user_login'))->first();
 
+      if($u == null){
+        \Session::flash('flash_message','login failed.');
+        return redirect('/');
+      }
+
       if (Hash::check(request('user_pass'), $u->user_pass))
       {
         Auth::login($u);
