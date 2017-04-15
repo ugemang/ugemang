@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Support\Str;
 
 use \Crypt;
 use Hash;
@@ -32,12 +33,13 @@ class EmailFindAccount extends Mailable
      */
     public function build()
     {
-        $this->user->user_pass = Hash::make('123456');
+        $pass = str_random(8);
+        $this->user->user_pass = Hash::make($pass);
         $this->user->save();
 
         return $this->view('email.findaccount')->with([
           'user_login' => $this->user->user_login,
-          'user_pass' => '123456'
+          'user_pass' => $pass
         ]);
     }
 }
