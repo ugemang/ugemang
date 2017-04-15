@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Schema::defaultStringLength(191);
 
         view()->composer(['layouts.header','main'], function($view){
           $view->with('icon', \App\Icon::geticon());

@@ -1,2 +1,2 @@
-<h1>Click the Link To Verify Your Email</h1>
-Click the following link to verify your email {{url('/verifyemail/'.$email_token)}}
+<h1>아래의 링크를 클릭하시면 회원가입이 완료됩니다.</h1>
+Link : <a href="{{url('/verifyemail/'.$email_token)}}">{{url('/verifyemail/'.$email_token)}}</a> 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use App\Jobs\SendVerificationEmail;
+use App\Jobs\SendFindAccountEmail;
 use App\User;
 
 use Hash;
@@ -68,8 +69,8 @@ class RegistrationController extends Controller
       dispatch(new SendVerificationEmail($user));
 
       //auth()->login($user);
-
-      return view('email.verification');
+      \Session::flash('flash_message','인증메일이 발송되었습니다. 메일함을 확인해주세요.');
+      return redirect('/');
     }
 
     public function verify($token)
@@ -77,7 +78,16 @@ class RegistrationController extends Controller
       $user = User::where('email_token',$token)->first();
       $user->verified = 1;
       if($user->save()){
-        return view('email.emailconfirm',['user'=>$user]);
+        \Session::flash('flash_message','인증메일이 발송되었습니다. 메일함을 확인해주세요.');
+        //Auth::login($user);
+        return redirect('/');
       }
+    }
+
+    public function find(){
+      $user = User::where('user_email',request('user_email'))->first();
+      dispatch(new SendFindAccountEmail($user));
+      \Session::flash('flash_message','아이디, 비밀번호정보가 발송되었습니다. 메일함을 확인해주세요.');
+      return redirect('/');
     }
 }

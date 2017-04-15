@@ -18,7 +18,7 @@
   <body>
 
     @if(Session::has('flash_message'))
-      <script>alert("로그인 실패")</script>
+      <script>alert("{{ Session::get('flash_message') }}")</script>
     @endif
 
     @include('layouts.header')
