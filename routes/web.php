@@ -13,7 +13,19 @@
 
 Route::get('/', function(){ return view('main'); });
 
-Route::get('/post', function(){ return view('post'); });
+Route::get('/post', function(){
+  /*
+    databinding
+    1. return view ('post',[
+        'name' => 'park',
+        'age' => '21'
+      ]);
+    2. return view ('post')->with('name','park');
+    3. $name = 'part' return view ('post',['name'=> $name])
+    4. $name = 'part' return view ('post',compact('name'));
+  */
+  return view('post');
+});
 
 Route::get('/news', function(){ return view('news'); });
 

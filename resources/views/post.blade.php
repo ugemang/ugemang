@@ -2,7 +2,6 @@
 
 
 @section('content')
-
 <div class="content">
 
   <div class="board title"><span class="subject">게시판</span></div>
