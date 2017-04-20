@@ -47,6 +47,19 @@ Route::post('/signup', 'RegistrationController@store');
 
 Route::get('/verifyemail/{token}', 'RegistrationController@verify');
 
+Route::get('/test', function(){
+  $data = DB::table('articles')->get();
+
+  return $data;
+});
+
+Route::get('/test/{b}', function($a){
+
+  $data = DB::table('articles')->find($a);
+
+  dd($data);
+  return view('post',compact($data));
+});
 
 Route::get('/{any}', function($any){
     return redirect('/');
