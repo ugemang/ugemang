@@ -47,6 +47,7 @@ Route::post('/signup', 'RegistrationController@store');
 
 Route::get('/verifyemail/{token}', 'RegistrationController@verify');
 
+
 Route::get('/test', function(){
   $data = DB::table('articles')->get();
 
@@ -60,6 +61,13 @@ Route::get('/test/{b}', function($a){
   dd($data);
   return view('post',compact($data));
 });
+
+// Route::get('/curation', function() {
+//   $posts = DB::table('posts')->get();
+//   dd($posts);
+//   return view('/curation'); });
+
+Route::get('/curation', 'PostController@index');
 
 Route::get('/{any}', function($any){
     return redirect('/');

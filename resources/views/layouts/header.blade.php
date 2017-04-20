@@ -3,29 +3,33 @@
     <span class="header-title">
      <a href="/">UGEMANG</a>
     </span>
+    <span class="header-subtitle">
+      @if (!Auth::check())
+        <span><input type="text" style="width:100px;" name="" value=""></span>
+        <span><input type="text" style="width:100px;" name="" value=""></span>
+        <span class="link" id="login">로그인 | </span>
+        <script type="text/javascript">
+          $("#login").click(function(){
+            alert("dd");
+          });
+        </script>
+        <span class="link"><a href="/signup">회원가입</a> | </span>
+        <span class="link"><a href="/find">아이디/비밀번호 찾기</a></span>
+      @endif
+      @if (Auth::check())
+        마이페이지
+        @if($icon != null)
+        <img src="/images/ico/{{Auth::user()->level}}.gif"/>
+        <a href="/logout">{{Auth::user()->user_nickname}}</a>
+        @endif
+      @endif
+    </span>
     <div class="header-util">
       <div class="header-search">
         <input type="text" class="search-text" name="" value=""/>
         <button class="search-btn">
       	   <img src="/images/search_button.png" alt="">
       	</button>
-      </div>
-      <div class="header-tabs">
-        <ul>
-          @if (!Auth::check())
-            <li><a href="/login">로그인</a></li>
-            <li>|</li>
-            <li><a href="/signup">회원가입</a></li>
-          @endif
-          @if (Auth::check())
-            <li>마이페이지</li>
-            @if($icon != null)
-            <li><img src="/images/ico/{{Auth::user()->level}}.gif"/>
-              <a href="/logout">{{Auth::user()->user_nickname}}</a>
-            </li>
-            @endif
-          @endif
-        </ul>
       </div>
     </div>
   </div>

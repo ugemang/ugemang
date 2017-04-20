@@ -40,7 +40,17 @@ button:focus {outline:0;}
     display: inline-block;
     margin-top: 24px;
     font-weight: bold;
-    font-size: 30px;}
+    font-size: 30px;
+    margin-right:20px;
+  }
+
+  .header-top .header-subtitle{
+    font-size:10px;
+  }
+
+  .header-top .header-subtitle .link{
+    cursor: pointer;
+  }
 
   .header-top .header-util{
     float: right;}
@@ -48,7 +58,7 @@ button:focus {outline:0;}
       float: left;
       width: 181px;
       height: 28px;
-      margin-top: 27px;
+      margin-top: 32px;
       margin-right: 12px;
       background: #ededed;
       border-radius: 10px;}
