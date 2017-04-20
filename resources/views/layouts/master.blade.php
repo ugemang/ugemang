@@ -11,7 +11,7 @@
     <title>Ugemang Community</title>
 
     <!-- Custom styles for this template -->
-    <link href="/css/submain.css?ver=1.7" rel="stylesheet">
+    <link href="/css/submain.css?ver=1.8" rel="stylesheet">
     <link href="/css/main.css?ver=1.1" rel="stylesheet">
   </head>
 
@@ -30,5 +30,6 @@
     </div>
 
     @include('layouts.footer')
+
   </body>
 </html>
