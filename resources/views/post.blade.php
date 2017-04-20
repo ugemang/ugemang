@@ -13,7 +13,6 @@
     <div class="files"></div>
     <div class="previousArticle"><img src="/images/Arrow_left.png" alt="이전글"><span class="articleLink">이전글 : 리니지2</span></div>
     <div class="nextArticle"><img src="/images/Arrow_right.png" alt="다음글"><span class="articleLink">다음글 : 리니지 이터널</span></div>
-
   </div>
 
   <div class="board title2">

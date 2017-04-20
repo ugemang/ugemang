@@ -21,7 +21,7 @@ class SessionController extends Controller
     public function test(){
       return redirect('/main');
     }
-
+  
     public function store(){
 
       $u = User::where('user_login', request('user_login'))->first();
