@@ -34,7 +34,7 @@ Route::get('/mypage', function() { return view('mypage'); });
 Route::get('/find', function(){ return view('registration.find'); });
 Route::post('/find', 'RegistrationController@find');
 Route::get('/signup', 'RegistrationController@create');
-Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionController@create']);
+//Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionController@create']);
 Route::post('/login', [ 'as' => 'login', 'uses' => 'SessionController@store']);
 
 Route::get('/logout', function(){
