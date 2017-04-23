@@ -34,7 +34,7 @@ Route::get('/mypage', function() { return view('mypage'); });
 Route::get('/find', function(){ return view('registration.find'); });
 Route::post('/find', 'RegistrationController@find');
 Route::get('/signup', 'RegistrationController@create');
-Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionController@create']);
+//Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionController@create']);
 Route::post('/login', [ 'as' => 'login', 'uses' => 'SessionController@store']);
 
 Route::get('/logout', function(){
@@ -67,8 +67,39 @@ Route::get('/test/{b}', function($a){
 //   dd($posts);
 //   return view('/curation'); });
 
+Route::get('/mingi', function(){ return view('test'); });
+
 Route::get('/curation', 'PostController@index');
-Route::get('/curation/{postId}', 'PostController@show');
+Route::get('/curation/create', 'PostController@create');
+Route::get('/curation/{id}', 'PostController@show');
+Route::post('/curation', 'PostController@store');
+
+/*
+
+  GET /curation
+
+  GET /curation/create
+
+  POST /curation => to submit wirte curation
+
+  GET /curation/{id}/edit
+
+  GET /curation/{id} =>to show single curation
+
+  PATCH /curation/{id} => to update curation
+
+  DELETE /curation/{id}
+*/
+
+
+
+Route::get('/tt', function(){
+
+  $img = Image::make('images/facebook_lg_btn.png')->resize(145, 35);
+
+  return $img->response('png');
+
+});
 
 Route::get('/{any}', function($any){
     return redirect('/');

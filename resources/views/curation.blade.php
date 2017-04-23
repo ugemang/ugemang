@@ -6,4 +6,7 @@
       <p>{{$post->title}}</p>
     @endforeach
   </div>
+  <div class="">
+    <a href="/curation/create">write curation</a>
+  </div>
 @endsection
