@@ -67,10 +67,12 @@ Route::get('/test/{b}', function($a){
 //   dd($posts);
 //   return view('/curation'); });
 
+Route::get('/mingi', function(){ return view('test'); });
+
 Route::get('/curation', 'PostController@index');
 Route::get('/tt', function(){
 
-  $img = Image::make('images/facebook_lg_btn.png')->resize(100, 80);
+  $img = Image::make('images/facebook_lg_btn.png')->resize(145, 35);
 
   return $img->response('png');
 

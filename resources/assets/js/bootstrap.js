@@ -17,6 +17,8 @@ require('bootstrap-sass');
  * and simple, leaving you to focus on building your next great project.
  */
 
+window.owls = require('owl.carousel');
+
 window.Vue = require('vue');
 
 /**
