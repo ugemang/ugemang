@@ -68,6 +68,7 @@ Route::get('/test/{b}', function($a){
 //   return view('/curation'); });
 
 Route::get('/curation', 'PostController@index');
+Route::get('/curation/{postId}', 'PostController@show');
 
 Route::get('/{any}', function($any){
     return redirect('/');
