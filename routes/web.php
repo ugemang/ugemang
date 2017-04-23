@@ -68,6 +68,13 @@ Route::get('/test/{b}', function($a){
 //   return view('/curation'); });
 
 Route::get('/curation', 'PostController@index');
+Route::get('/tt', function(){
+
+  $img = Image::make('images/facebook_lg_btn.png')->resize(100, 80);
+
+  return $img->response('png');
+
+});
 
 Route::get('/{any}', function($any){
     return redirect('/');
