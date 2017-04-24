@@ -16,7 +16,7 @@
              'csrfToken' => csrf_token(),
          ]); ?>
        </script>
-    <link href="/css/submain.css?ver=1.8" rel="stylesheet">
+    <link href="/css/submain.css?ver=1.9" rel="stylesheet">
     <link href="/css/main.css?ver=1.1" rel="stylesheet">
     <script src="/js/manifest.js"></script>
     <script src="/js/vendor.js"></script>
