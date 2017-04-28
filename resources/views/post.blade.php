@@ -16,8 +16,12 @@
   </div>
 
   <div class="board title2">
-    <span class="subject">타이탄폴2 댓글</span>
-    <span class="total">총 <label style="color:red">193개</label>의 댓글이 있습니다.</span>
+    @foreach ($post as $post)
+      <span class="subject">{{$post->title}}타이탄폴2 댓글</span>
+      <span class="total">총 <label style="color:red">193개</label>의 댓글이 있습니다.</span>
+      {!!$post->content!!};
+  
+    @endforeach
   </div>
 
   <div class="replyArea">

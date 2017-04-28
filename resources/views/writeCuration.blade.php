@@ -12,12 +12,12 @@
 
       <div class="">
         <label for="content">content</label>
-        <textarea name="content" id="content" rows="8" cols="80"></textarea>
+        <textarea name = "content" id="content"></textarea>
       </div>
-      <div id="summernote"><p>Hello Summernote</p></div>
+
       <script>
         $(document).ready(function() {
-            $('#summernote').summernote();
+            $('#content').summernote();
         });
       </script>
       <div class="">
