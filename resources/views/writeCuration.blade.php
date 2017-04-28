@@ -14,7 +14,12 @@
         <label for="content">content</label>
         <textarea name="content" id="content" rows="8" cols="80"></textarea>
       </div>
-
+      <div id="summernote"><p>Hello Summernote</p></div>
+      <script>
+        $(document).ready(function() {
+            $('#summernote').summernote();
+        });
+      </script>
       <div class="">
         <button type="submit">publish</button>
       </div>
