@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\post;
-
+use Auth;
 
 class PostController extends Controller
 {
@@ -22,7 +22,7 @@ class PostController extends Controller
     public function show($id){
       //dd($id);
       $post = post::where('document_id', $id)->get();
-    
+
     //  dd($post);
       return view('post', compact('post'));
 
@@ -33,6 +33,7 @@ class PostController extends Controller
     }
 
     public function store(Request $request){
+
         $this->validate($request, [
              'content' => 'required',
              'title' => 'required'

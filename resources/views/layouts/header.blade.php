@@ -10,7 +10,7 @@
       <span class="header-subtitle">
         @if (!Auth::check())
             <span><input type="text" style="width:100px;" name="user_login" value=""></span>
-            <span><input type="text" style="width:100px;" name="user_pass" value=""></span>
+            <span><input type="password" style="width:100px;" name="user_pass" value=""></span>
             <span class="link" id="login">로그인 | </span>
             <span class="link"><a href="/signup">회원가입</a> | </span>
             <span class="link"><a href="/find">아이디/비밀번호 찾기</a></span>
