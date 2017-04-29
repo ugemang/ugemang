@@ -69,6 +69,8 @@ class PostController extends Controller
          } // <!-
          $post->content = $dom->saveHTML();
          $post->title = $title;
+         $post->user_login = Auth::user()->user_login;
+         $post->user_nickname = Auth::user()->user_nickname;
          $post->save();
       //dd(request() -> all());
 
