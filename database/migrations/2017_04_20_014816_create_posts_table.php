@@ -29,7 +29,7 @@ class CreatePostsTable extends Migration
             $table->bigInteger('comment_count')->default('0');  //#bigint(11) NOT NULL DEFAULT '0';
             $table->bigInteger('trackback_count')->default('0');  //#bigint(11) NOT NULL DEFAULT '0'; #??
             $table->bigInteger('uploaded_count')->default('0');  //#bigint(11) NOT NULL DEFAULT '0';
-            $table->string('password', 60)->default(null);  //#varchar(60) DEFAULT NULL;
+            //$table->string('password', 60)->default(null);  //#varchar(60) DEFAULT NULL;
             $table->string('user_login', 80)->default(null);  //#varchar(80) DEFAULT NULL;
             $table->string('user_nickname', 80); //#varchar(80) NOT NULL;
             //$table->string('nick_name', 80); //#varchar(80) NOT NULL;
